@@ -118,3 +118,6 @@ class Sightings(models.Model):
 
     # Runs from
     runs_from = models.BooleanField()
+
+    def __str__(self):
+        return self.unique_squirrel_id
